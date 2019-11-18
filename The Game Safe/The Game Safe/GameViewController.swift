@@ -17,8 +17,27 @@ import UIKit
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        updateViews()
+    }
+    
+    @IBAction func gameButtonPressed(_ sender: UIButton) {
+    }
+    
+    
+    func updateViews() {
+        gameButton.layer.cornerRadius = 170
+        gameButton.layer.borderColor = UIColor.black.cgColor
+        gameButton.layer.borderWidth = 2.0
+    }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
