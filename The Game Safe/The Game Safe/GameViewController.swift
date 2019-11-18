@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  The Game Safe
 //
-//  Created by Alex Shillingford on 11/17/19.
+//  Created by Alex Shillingford on 11/18/19.
 //  Copyright © 2019 Alex Shillingford. All rights reserved.
 //
 
