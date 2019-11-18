@@ -8,7 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+@IBDesignable class GameViewController: UIViewController {
+    
+    @IBOutlet weak var highScoreLabel: UILabel!
+    @IBOutlet weak var difficultySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var gameButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +22,3 @@ class ViewController: UIViewController {
 
 
 }
-
