@@ -115,13 +115,94 @@
                     <view key="view" contentMode="scaleToFill" id="McU-iz-yjS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This segmented control tells the app what level of danger you're in" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-ma-XKi">
+                                <rect key="frame" x="20" y="44" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="How-Xu-aVd"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SegmentControl@2x" translatesAutoresizingMaskIntoConstraints="NO" id="SkO-Kp-3Rh">
+                                <rect key="frame" x="20" y="152" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8vh-V7-aIZ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Easy - Sends a text to your chosen contact(s) that you might be in a dangerous situation and asks them to check in with you" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-rq-jgq">
+                                <rect key="frame" x="20" y="212" width="374" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Hor-KO-m9E"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-SG-z9u">
+                                <rect key="frame" x="20" y="372" width="374" height="130"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="5sV-91-erA"/>
+                                </constraints>
+                                <string key="text">Medium - Sends a text and your current location to your chosen contact(s) that you are in danger of or currently being physically harmed and asks them to go to you</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-2L-qhV">
+                                <rect key="frame" x="20" y="552" width="374" height="135"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="cT3-sG-cUx"/>
+                                </constraints>
+                                <string key="text">Hard - Sends your current location and a text asking your chosen contact(s) to immediately contact law enforcement informing them of your location and that you are in immediate danger</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-S4-exw">
+                                <rect key="frame" x="20" y="762" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZDX-rN-1H8"/>
+                                </constraints>
+                                <string key="text">DISCLAIMER: Every segment selection starts an audio recording and sends the recording along with the text message to your chosen contact(s)</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xoz-rq-jgq" firstAttribute="top" secondItem="SkO-Kp-3Rh" secondAttribute="bottom" constant="24" id="6pr-MT-GtR"/>
+                            <constraint firstItem="ZIW-ma-XKi" firstAttribute="top" secondItem="prG-IA-56M" secondAttribute="top" id="9lQ-Jp-UBJ"/>
+                            <constraint firstItem="ZIW-ma-XKi" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="EyW-jY-Mhf"/>
+                            <constraint firstItem="GpZ-SG-z9u" firstAttribute="top" secondItem="xoz-rq-jgq" secondAttribute="bottom" constant="50" id="FqF-cH-lqr"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="ZIW-ma-XKi" secondAttribute="trailing" constant="20" id="KkQ-kS-coy"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="xoz-rq-jgq" secondAttribute="trailing" constant="20" id="Kys-3u-4qo"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="bottom" secondItem="jsQ-S4-exw" secondAttribute="bottom" constant="20" id="NAt-z3-zjj"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="SkO-Kp-3Rh" secondAttribute="trailing" constant="20" id="TDa-NJ-Wtu"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="7Fs-2L-qhV" secondAttribute="trailing" constant="20" id="V3J-rk-nem"/>
+                            <constraint firstItem="7Fs-2L-qhV" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="XNC-MT-vrg"/>
+                            <constraint firstItem="GpZ-SG-z9u" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="ZbO-a8-U8B"/>
+                            <constraint firstItem="xoz-rq-jgq" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="aaf-Ji-Ekx"/>
+                            <constraint firstItem="SkO-Kp-3Rh" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="hOu-HF-wh1"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="GpZ-SG-z9u" secondAttribute="trailing" constant="20" id="hsx-YR-dBC"/>
+                            <constraint firstItem="7Fs-2L-qhV" firstAttribute="top" secondItem="GpZ-SG-z9u" secondAttribute="bottom" constant="50" id="kEv-St-X4l"/>
+                            <constraint firstItem="jsQ-S4-exw" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="lmB-0L-9ix"/>
+                            <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="jsQ-S4-exw" secondAttribute="trailing" constant="20" id="tDD-kd-fHq"/>
+                            <constraint firstItem="SkO-Kp-3Rh" firstAttribute="top" secondItem="ZIW-ma-XKi" secondAttribute="bottom" constant="8" id="xEC-bH-yAc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="prG-IA-56M"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoD-m2-DTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="155"/>
+            <point key="canvasLocation" x="1221.7391304347827" y="154.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="csz-5y-FQf">
@@ -130,7 +211,74 @@
                     <view key="view" contentMode="scaleToFill" id="Q7r-ow-dIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The &quot;START&quot; button starts recording audio of the situation" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AjX-HQ-z7B">
+                                <rect key="frame" x="20" y="44" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="UwK-qf-fvM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartButton@3x" translatesAutoresizingMaskIntoConstraints="NO" id="Ixg-Yp-3hD">
+                                <rect key="frame" x="87" y="122" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ixg-Yp-3hD" secondAttribute="height" multiplier="1:1" id="0kK-B0-Dc0"/>
+                                    <constraint firstAttribute="width" constant="240" id="Ggc-GI-ZSd"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-qX-amx">
+                                <rect key="frame" x="20" y="370" width="374" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="W57-n9-spy"/>
+                                </constraints>
+                                <string key="text">Once you press start, the app will record the situation for 30 minutes, then it will send the text and audio recording to your specified contact(s)</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(You can change the length of the record-to-send time in settings under &quot;Game Length&quot;)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5rU-i4-Oej">
+                                <rect key="frame" x="20" y="550" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="C3j-Ef-vah"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5sD-in-4za">
+                                <rect key="frame" x="20" y="632" width="374" height="210"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="8jF-8O-5rJ"/>
+                                </constraints>
+                                <string key="text">You will receive two notifications during recording, one half way through, and one five minutes before time is up asking if "you're still there" before it sends the messages. If you didn't mean to tap start, simply tap start a second time and it will cancel the process</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="5sD-in-4za" secondAttribute="trailing" constant="20" id="DRB-OB-kKP"/>
+                            <constraint firstItem="AjX-HQ-z7B" firstAttribute="top" secondItem="Mya-Jb-jVn" secondAttribute="top" id="MxP-lc-pyl"/>
+                            <constraint firstItem="Mya-Jb-jVn" firstAttribute="bottom" secondItem="5sD-in-4za" secondAttribute="bottom" constant="20" id="VCM-3x-VYh"/>
+                            <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="5rU-i4-Oej" secondAttribute="trailing" constant="20" id="XZH-Xj-mGD"/>
+                            <constraint firstItem="5rU-i4-Oej" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="YwV-et-arR"/>
+                            <constraint firstItem="5rU-i4-Oej" firstAttribute="top" secondItem="2uR-qX-amx" secondAttribute="bottom" constant="20" id="cQ6-z1-4cW"/>
+                            <constraint firstItem="5sD-in-4za" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="dHA-zU-ndx"/>
+                            <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="2uR-qX-amx" secondAttribute="trailing" constant="20" id="gYw-xd-7os"/>
+                            <constraint firstItem="Ixg-Yp-3hD" firstAttribute="centerX" secondItem="Q7r-ow-dIb" secondAttribute="centerX" id="nLn-yl-O6x"/>
+                            <constraint firstItem="2uR-qX-amx" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="qGA-oC-cL1"/>
+                            <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="AjX-HQ-z7B" secondAttribute="trailing" constant="20" id="rGT-wk-afj"/>
+                            <constraint firstItem="AjX-HQ-z7B" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="ysP-1f-2fH"/>
+                            <constraint firstItem="2uR-qX-amx" firstAttribute="top" secondItem="Ixg-Yp-3hD" secondAttribute="bottom" constant="8" id="z70-Tp-FPy"/>
+                            <constraint firstItem="Ixg-Yp-3hD" firstAttribute="top" secondItem="AjX-HQ-z7B" secondAttribute="bottom" constant="8" id="zpO-OS-6yF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mya-Jb-jVn"/>
                     </view>
                 </viewController>
@@ -138,5 +286,59 @@
             </objects>
             <point key="canvasLocation" x="2025" y="155"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jhv-SS-ZkP">
+            <objects>
+                <viewController storyboardIdentifier="Onboard4" id="Ndl-X1-7Wi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aPL-2K-sb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to get set up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbp-Ug-SQa">
+                                <rect key="frame" x="39.5" y="129" width="335" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrA-f5-s0T">
+                                <rect key="frame" x="20" y="692" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LaG-vS-6P6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Let's go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjU-po-OkS">
+                                <rect key="frame" x="87" y="316" width="240" height="264"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="221"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vrA-f5-s0T" firstAttribute="centerX" secondItem="aPL-2K-sb3" secondAttribute="centerX" id="8pb-sb-zTd"/>
+                            <constraint firstItem="sbp-Ug-SQa" firstAttribute="top" secondItem="4kN-N4-GL7" secondAttribute="top" constant="85" id="9LT-dd-W9S"/>
+                            <constraint firstItem="vjU-po-OkS" firstAttribute="centerY" secondItem="aPL-2K-sb3" secondAttribute="centerY" id="BWQ-Tc-gCG"/>
+                            <constraint firstItem="vjU-po-OkS" firstAttribute="centerX" secondItem="aPL-2K-sb3" secondAttribute="centerX" id="Bsj-yT-E6N"/>
+                            <constraint firstItem="vrA-f5-s0T" firstAttribute="leading" secondItem="4kN-N4-GL7" secondAttribute="leading" constant="20" id="COI-lA-hYj"/>
+                            <constraint firstItem="4kN-N4-GL7" firstAttribute="bottom" secondItem="vrA-f5-s0T" secondAttribute="bottom" constant="120" id="L1Q-R9-8mT"/>
+                            <constraint firstItem="sbp-Ug-SQa" firstAttribute="centerX" secondItem="aPL-2K-sb3" secondAttribute="centerX" id="fTQ-cI-r72"/>
+                            <constraint firstItem="4kN-N4-GL7" firstAttribute="trailing" secondItem="vrA-f5-s0T" secondAttribute="trailing" constant="20" id="zcF-pQ-p5Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4kN-N4-GL7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shd-Uk-Pi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2833" y="155"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="SegmentControl@2x" width="229.5" height="22"/>
+        <image name="StartButton@3x" width="238" height="237.33332824707031"/>
+    </resources>
 </document>
