@@ -13,7 +13,8 @@ class OnboardPageViewController: UIPageViewController {
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newViewController(vc: "Onboard1"),
                 self.newViewController(vc: "Onboard2"),
-                self.newViewController(vc: "Onboard3")]
+                self.newViewController(vc: "Onboard3"),
+                self.newViewController(vc: "Onboard4")]
     }()
     
     var pageControl = UIPageControl()
