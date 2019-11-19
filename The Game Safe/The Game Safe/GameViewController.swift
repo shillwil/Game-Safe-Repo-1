@@ -18,7 +18,7 @@ import UIKit
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        onboardChecker()
+        onboardChecker()
         updateViews()
     }
     
