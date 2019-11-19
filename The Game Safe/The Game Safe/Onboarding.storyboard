@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1D-UE-eID">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboard Page View Controller-->
+        <scene sceneID="M76-KJ-3YG">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="y1D-UE-eID" customClass="OnboardPageViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQH-zT-dpv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="155"/>
+        </scene>
+        <!--First Onboard View Controller-->
+        <scene sceneID="YZG-tc-Glv">
+            <objects>
+                <viewController storyboardIdentifier="Onboard1" id="tdx-ET-1Zc" customClass="FirstOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ss5-xg-iaF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WSp-NT-8tZ">
+                                <rect key="frame" x="82" y="52" width="250.5" height="118"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA0-OP-Lgi">
+                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-rE-3BQ">
+                                        <rect key="frame" x="0.0" y="63" width="250.5" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Game Safe is an alert system app disguised as a game" translatesAutoresizingMaskIntoConstraints="NO" id="GBM-tJ-Ls4">
+                                <rect key="frame" x="20" y="220" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="V8a-8A-Tne"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Let's get started by seeing how the app works!" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-DW-cet">
+                                <rect key="frame" x="20" y="555" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A3v-dY-cGb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cbE-2d-zed"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It allows you to secretly contact family, friends, or the authorities anytime you feel your safety might be at risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pO-XT-L3E">
+                                <rect key="frame" x="20" y="355" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="iwC-xr-EXA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2h-Kj-5rs">
+                                <rect key="frame" x="172" y="663" width="70" height="78"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BWf-DW-cet" firstAttribute="leading" secondItem="wnr-Id-Erw" secondAttribute="leading" constant="20" id="52d-Sq-6yG"/>
+                            <constraint firstItem="Y2h-Kj-5rs" firstAttribute="centerX" secondItem="Ss5-xg-iaF" secondAttribute="centerX" id="8jX-h0-pc1"/>
+                            <constraint firstItem="GBM-tJ-Ls4" firstAttribute="top" secondItem="WSp-NT-8tZ" secondAttribute="bottom" constant="50" id="9tS-dG-ceM"/>
+                            <constraint firstItem="WSp-NT-8tZ" firstAttribute="centerX" secondItem="Ss5-xg-iaF" secondAttribute="centerX" id="LcZ-sa-h8W"/>
+                            <constraint firstItem="9pO-XT-L3E" firstAttribute="leading" secondItem="wnr-Id-Erw" secondAttribute="leading" constant="20" id="Lsu-Cm-WHF"/>
+                            <constraint firstItem="wnr-Id-Erw" firstAttribute="trailing" secondItem="GBM-tJ-Ls4" secondAttribute="trailing" constant="20" id="RNc-JS-vSk"/>
+                            <constraint firstItem="Y2h-Kj-5rs" firstAttribute="top" secondItem="BWf-DW-cet" secondAttribute="bottom" constant="8" id="T19-t4-cG5"/>
+                            <constraint firstItem="BWf-DW-cet" firstAttribute="top" secondItem="9pO-XT-L3E" secondAttribute="bottom" constant="50" id="V2c-FE-Ws0"/>
+                            <constraint firstItem="WSp-NT-8tZ" firstAttribute="top" secondItem="wnr-Id-Erw" secondAttribute="top" constant="8" id="YxP-mx-zbL"/>
+                            <constraint firstItem="9pO-XT-L3E" firstAttribute="top" secondItem="GBM-tJ-Ls4" secondAttribute="bottom" constant="35" id="ka8-V2-8sv"/>
+                            <constraint firstItem="GBM-tJ-Ls4" firstAttribute="leading" secondItem="wnr-Id-Erw" secondAttribute="leading" constant="20" id="l4X-6j-n97"/>
+                            <constraint firstItem="wnr-Id-Erw" firstAttribute="trailing" secondItem="9pO-XT-L3E" secondAttribute="trailing" constant="20" id="rZo-p4-SwC"/>
+                            <constraint firstItem="wnr-Id-Erw" firstAttribute="trailing" secondItem="BWf-DW-cet" secondAttribute="trailing" constant="20" id="thW-Cf-gik"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wnr-Id-Erw"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomTextView" destination="BWf-DW-cet" id="X3J-ZZ-MHr"/>
+                        <outlet property="middleTextView" destination="9pO-XT-L3E" id="tip-r0-a9n"/>
+                        <outlet property="pointerLabel" destination="Y2h-Kj-5rs" id="Rff-qt-qpR"/>
+                        <outlet property="topTextView" destination="GBM-tJ-Ls4" id="oKR-6m-ZqP"/>
+                        <outlet property="welcomeStackView" destination="WSp-NT-8tZ" id="Rbj-ho-xMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJg-RN-MKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="155"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BwO-0L-sbb">
+            <objects>
+                <viewController storyboardIdentifier="Onboard2" id="uaM-DC-GPg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="McU-iz-yjS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="prG-IA-56M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoD-m2-DTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="155"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="csz-5y-FQf">
+            <objects>
+                <viewController storyboardIdentifier="Onboard3" id="SA2-AM-jfs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7r-ow-dIb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Mya-Jb-jVn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leO-sP-mED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="155"/>
+        </scene>
+    </scenes>
+</document>
