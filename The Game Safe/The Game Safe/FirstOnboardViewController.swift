@@ -19,8 +19,24 @@ class FirstOnboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
+    func onboardAnimations() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.welcomeStackView.center.y -= 50
+            self.welcomeStackView.alpha = 0.0
+        }) { (_) in
+            UIView.animate(withDuration: 0.5) {
+                self.welcomeStackView.center.y += 50
+                self.welcomeStackView.alpha = 1.0
+            }
+        }
     }
 
     /*
