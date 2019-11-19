@@ -14,10 +14,11 @@ import UIKit
     @IBOutlet weak var difficultySegmentedControl: UISegmentedControl!
     @IBOutlet weak var gameButton: UIButton!
     
+    var onboardIndicator: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        onboardChecker()
         updateViews()
     }
     
@@ -29,6 +30,13 @@ import UIKit
         gameButton.layer.cornerRadius = 170
         gameButton.layer.borderColor = UIColor.black.cgColor
         gameButton.layer.borderWidth = 2.0
+    }
+    
+    func onboardChecker() {
+        if onboardIndicator == 0 {
+            performSegue(withIdentifier: "OnboardSegue", sender: nil)
+            onboardIndicator += 1
+        } 
     }
     /*
     // MARK: - Navigation

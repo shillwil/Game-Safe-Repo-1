@@ -75,11 +75,20 @@
                         <outlet property="difficultySegmentedControl" destination="023-BV-abB" id="jr4-VG-EBz"/>
                         <outlet property="gameButton" destination="3k7-lp-SEI" id="CPZ-Cu-ERN"/>
                         <outlet property="highScoreLabel" destination="UGb-FT-fVS" id="k0r-3R-tSr"/>
+                        <segue destination="dL7-Bp-fjd" kind="presentation" identifier="OnboardSegue" modalPresentationStyle="fullScreen" id="VtF-iv-liT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rog-Kw-BF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024.6376811594205" y="137.94642857142856"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="ibd-td-V4h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="dL7-Bp-fjd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQO-TJ-TBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882" y="-368"/>
         </scene>
         <!--Game-->
         <scene sceneID="qql-h0-7ev">
