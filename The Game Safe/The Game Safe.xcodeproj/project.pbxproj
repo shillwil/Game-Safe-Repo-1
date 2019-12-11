@@ -11,6 +11,7 @@
 		A2C681172383AA7A000C8812 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C681162383AA7A000C8812 /* Onboarding.storyboard */; };
 		A2C681192383AB56000C8812 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C681182383AB56000C8812 /* OnboardPageViewController.swift */; };
 		A2C6811B2383BA91000C8812 /* FirstOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */; };
+		A2C955FD23A1B648001520DF /* ThirdOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */; };
 		A2DA32FE238210B6002A518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32FD238210B6002A518E /* AppDelegate.swift */; };
 		A2DA3300238210B6002A518E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32FF238210B6002A518E /* SceneDelegate.swift */; };
 		A2DA3305238210B6002A518E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA3303238210B6002A518E /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		A2C681162383AA7A000C8812 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A2C681182383AB56000C8812 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
 		A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardViewController.swift; sourceTree = "<group>"; };
+		A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardViewController.swift; sourceTree = "<group>"; };
 		A2DA32FA238210B6002A518E /* The Game Safe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Game Safe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA32FD238210B6002A518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA32FF238210B6002A518E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2C955FE23A1B658001520DF /* Onboarding Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2C681162383AA7A000C8812 /* Onboarding.storyboard */,
+				A27801132384A4010058CED2 /* SecondOnboardViewController.swift */,
+				A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */,
+				A2C681182383AB56000C8812 /* OnboardPageViewController.swift */,
+				A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */,
+			);
+			path = "Onboarding Resources";
+			sourceTree = "<group>";
+		};
 		A2DA32F1238210B6002A518E = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +82,7 @@
 				A2DA32FF238210B6002A518E /* SceneDelegate.swift */,
 				A2DA33112383108C002A518E /* GameViewController.swift */,
 				A2DA3303238210B6002A518E /* Main.storyboard */,
-				A2C681162383AA7A000C8812 /* Onboarding.storyboard */,
-				A27801132384A4010058CED2 /* SecondOnboardViewController.swift */,
-				A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */,
-				A2C681182383AB56000C8812 /* OnboardPageViewController.swift */,
+				A2C955FE23A1B658001520DF /* Onboarding Resources */,
 				A2DA3306238210B7002A518E /* Assets.xcassets */,
 				A2DA3308238210B7002A518E /* LaunchScreen.storyboard */,
 				A2DA330B238210B7002A518E /* Info.plist */,
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DA32FE238210B6002A518E /* AppDelegate.swift in Sources */,
+				A2C955FD23A1B648001520DF /* ThirdOnboardViewController.swift in Sources */,
 				A2DA33122383108C002A518E /* GameViewController.swift in Sources */,
 				A27801142384A4010058CED2 /* SecondOnboardViewController.swift in Sources */,
 				A2DA3300238210B6002A518E /* SceneDelegate.swift in Sources */,
