@@ -108,15 +108,15 @@
             </objects>
             <point key="canvasLocation" x="417" y="155"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Onboard View Controller-->
         <scene sceneID="BwO-0L-sbb">
             <objects>
-                <viewController storyboardIdentifier="Onboard2" id="uaM-DC-GPg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboard2" id="uaM-DC-GPg" customClass="SecondOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="McU-iz-yjS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This segmented control tells the app what level of danger you're in" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-ma-XKi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This segmented control tells the app what level of danger you're in" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-ma-XKi">
                                 <rect key="frame" x="20" y="44" width="374" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -132,7 +132,7 @@
                                     <constraint firstAttribute="height" constant="36" id="8vh-V7-aIZ"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Easy - Sends a text to your chosen contact(s) that you might be in a dangerous situation and asks them to check in with you" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-rq-jgq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Easy - Sends a text to your chosen contact(s) that you might be in a dangerous situation and asks them to check in with you" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-rq-jgq">
                                 <rect key="frame" x="20" y="212" width="374" height="110"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -142,7 +142,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-SG-z9u">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-SG-z9u">
                                 <rect key="frame" x="20" y="372" width="374" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -153,7 +153,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-2L-qhV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-2L-qhV">
                                 <rect key="frame" x="20" y="552" width="374" height="135"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -164,7 +164,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-S4-exw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-S4-exw">
                                 <rect key="frame" x="20" y="762" width="374" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -199,6 +199,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="prG-IA-56M"/>
                     </view>
+                    <connections>
+                        <outlet property="disclaimerTextView" destination="jsQ-S4-exw" id="7s1-GJ-Ncf"/>
+                        <outlet property="easyTextView" destination="xoz-rq-jgq" id="AFf-rn-GJ9"/>
+                        <outlet property="hardTextView" destination="7Fs-2L-qhV" id="SW2-UP-PLC"/>
+                        <outlet property="mediumTextView" destination="GpZ-SG-z9u" id="D90-re-4HY"/>
+                        <outlet property="segmentControlImageView" destination="SkO-Kp-3Rh" id="GwF-eZ-MxD"/>
+                        <outlet property="topTextView" destination="ZIW-ma-XKi" id="HUb-LE-sYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoD-m2-DTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,7 +10,13 @@ import UIKit
 
 class SecondOnboardViewController: UIViewController {
     
-    
+    @IBOutlet weak var topTextView: UITextView!
+    @IBOutlet weak var segmentControlImageView: UIImageView!
+    @IBOutlet weak var easyTextView: UITextView!
+    @IBOutlet weak var mediumTextView: UITextView!
+    @IBOutlet weak var hardTextView: UITextView!
+    @IBOutlet weak var disclaimerTextView: UITextView!
+    var hasAnimated: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
