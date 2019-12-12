@@ -358,7 +358,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SegmentControl@2x" width="229.5" height="22"/>
-        <image name="StartButton@3x" width="238" height="237.33332824707031"/>
+        <image name="SegmentControl@2x" width="264.5" height="22.5"/>
+        <image name="StartButton@3x" width="226" height="226"/>
     </resources>
 </document>
