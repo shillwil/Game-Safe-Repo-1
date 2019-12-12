@@ -20,18 +20,54 @@ class ThirdOnboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if hasAnimated == false {
+            resetAnimations()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if hasAnimated == false {
+            launchAnimations()
+            hasAnimated = true
+        }
     }
-    */
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if hasAnimated == false {
+            resetAnimations()
+        }
+    }
+    
+    func launchAnimations() {
+        UIView.animateKeyframes(withDuration: 4.0, delay: 0, options: [], animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.08) {
+                self.topTextView.alpha = 1
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.08) {
+                self.startButtonImageView.alpha = 1.0
+                self.startButtonImageView.transform = .identity
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.48, relativeDuration: 0.16) {
+                self.middleTextView.alpha = 1
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.64, relativeDuration: 0.16) {
+                self.disclosureTextView.alpha = 1
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.8, relativeDuration: 0.16) {
+                self.bottomTextView.alpha = 1
+            }
+        }, completion: nil)
+    }
+    
+    func resetAnimations() {
+        self.startButtonImageView.alpha = 0
+        self.startButtonImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        self.topTextView.alpha = 0
+        self.middleTextView.alpha = 0
+        self.disclosureTextView.alpha = 0
+        self.bottomTextView.alpha = 0
+    }
 
 }
