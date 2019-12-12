@@ -12,6 +12,7 @@
 		A2C681192383AB56000C8812 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C681182383AB56000C8812 /* OnboardPageViewController.swift */; };
 		A2C6811B2383BA91000C8812 /* FirstOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */; };
 		A2C955FD23A1B648001520DF /* ThirdOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */; };
+		A2C9560023A20099001520DF /* FourthOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C955FF23A20099001520DF /* FourthOnboardViewController.swift */; };
 		A2DA32FE238210B6002A518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32FD238210B6002A518E /* AppDelegate.swift */; };
 		A2DA3300238210B6002A518E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32FF238210B6002A518E /* SceneDelegate.swift */; };
 		A2DA3305238210B6002A518E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA3303238210B6002A518E /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		A2C681182383AB56000C8812 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
 		A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardViewController.swift; sourceTree = "<group>"; };
 		A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardViewController.swift; sourceTree = "<group>"; };
+		A2C955FF23A20099001520DF /* FourthOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnboardViewController.swift; sourceTree = "<group>"; };
 		A2DA32FA238210B6002A518E /* The Game Safe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Game Safe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA32FD238210B6002A518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA32FF238210B6002A518E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */,
 				A27801132384A4010058CED2 /* SecondOnboardViewController.swift */,
 				A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */,
+				A2C955FF23A20099001520DF /* FourthOnboardViewController.swift */,
 				A2C681182383AB56000C8812 /* OnboardPageViewController.swift */,
 			);
 			path = "Onboarding Resources";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C9560023A20099001520DF /* FourthOnboardViewController.swift in Sources */,
 				A2DA32FE238210B6002A518E /* AppDelegate.swift in Sources */,
 				A2C955FD23A1B648001520DF /* ThirdOnboardViewController.swift in Sources */,
 				A2DA33122383108C002A518E /* GameViewController.swift in Sources */,
