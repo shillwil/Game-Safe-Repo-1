@@ -9,6 +9,13 @@
 import UIKit
 
 class ThirdOnboardViewController: UIViewController {
+    
+    @IBOutlet weak var topTextView: UITextView!
+    @IBOutlet weak var startButtonImageView: UIImageView!
+    @IBOutlet weak var middleTextView: UITextView!
+    @IBOutlet weak var disclosureTextView: UITextView!
+    @IBOutlet weak var bottomTextView: UITextView!
+    var hasAnimated: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()

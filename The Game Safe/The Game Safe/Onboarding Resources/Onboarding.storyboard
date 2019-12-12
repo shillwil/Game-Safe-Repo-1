@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1D-UE-eID">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1D-UE-eID">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="1221.7391304347827" y="154.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Onboard View Controller-->
         <scene sceneID="csz-5y-FQf">
             <objects>
-                <viewController storyboardIdentifier="Onboard3" id="SA2-AM-jfs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboard3" id="SA2-AM-jfs" customClass="ThirdOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7r-ow-dIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,6 +289,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mya-Jb-jVn"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomTextView" destination="5sD-in-4za" id="QeW-5f-cm7"/>
+                        <outlet property="disclosureTextView" destination="5rU-i4-Oej" id="woG-mf-jnT"/>
+                        <outlet property="middleTextView" destination="2uR-qX-amx" id="HSd-T8-vpn"/>
+                        <outlet property="startButtonImageView" destination="Ixg-Yp-3hD" id="lmA-vH-VZX"/>
+                        <outlet property="topTextView" destination="AjX-HQ-z7B" id="6uA-h9-Mmm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leO-sP-mED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +317,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrA-f5-s0T">
                                 <rect key="frame" x="20" y="692" width="374" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LaG-vS-6P6"/>
                                 </constraints>

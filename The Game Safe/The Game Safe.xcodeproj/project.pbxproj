@@ -51,10 +51,10 @@
 			isa = PBXGroup;
 			children = (
 				A2C681162383AA7A000C8812 /* Onboarding.storyboard */,
-				A27801132384A4010058CED2 /* SecondOnboardViewController.swift */,
 				A2C6811A2383BA91000C8812 /* FirstOnboardViewController.swift */,
-				A2C681182383AB56000C8812 /* OnboardPageViewController.swift */,
+				A27801132384A4010058CED2 /* SecondOnboardViewController.swift */,
 				A2C955FC23A1B648001520DF /* ThirdOnboardViewController.swift */,
+				A2C681182383AB56000C8812 /* OnboardPageViewController.swift */,
 			);
 			path = "Onboarding Resources";
 			sourceTree = "<group>";
