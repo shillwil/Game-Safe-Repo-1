@@ -23,6 +23,7 @@ class ThirdOnboardViewController: UIViewController {
         if hasAnimated == false {
             resetAnimations()
         }
+        startButtonImageView.clipsToBounds = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,12 +43,12 @@ class ThirdOnboardViewController: UIViewController {
     
     func launchAnimations() {
         UIView.animateKeyframes(withDuration: 4.0, delay: 0, options: [], animations: {
-            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.08) {
-                self.topTextView.alpha = 1
-            }
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.08) {
                 self.startButtonImageView.alpha = 1.0
                 self.startButtonImageView.transform = .identity
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.08, relativeDuration: 0.08) {
+                self.topTextView.alpha = 1
             }
             UIView.addKeyframe(withRelativeStartTime: 0.48, relativeDuration: 0.16) {
                 self.middleTextView.alpha = 1
