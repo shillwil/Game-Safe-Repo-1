@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1D-UE-eID">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,20 +20,20 @@
             <objects>
                 <viewController storyboardIdentifier="Onboard1" id="tdx-ET-1Zc" customClass="FirstOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ss5-xg-iaF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WSp-NT-8tZ">
-                                <rect key="frame" x="82" y="52" width="250.5" height="118"/>
+                                <rect key="frame" x="62.333333333333329" y="52" width="250.33333333333337" height="118"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA0-OP-Lgi">
-                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250.33333333333334" height="55"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-rE-3BQ">
-                                        <rect key="frame" x="0.0" y="63" width="250.5" height="55"/>
+                                        <rect key="frame" x="0.0" y="63" width="250.33333333333334" height="55"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Game Safe is an alert system app disguised as a game" translatesAutoresizingMaskIntoConstraints="NO" id="GBM-tJ-Ls4">
-                                <rect key="frame" x="20" y="220" width="374" height="100"/>
+                                <rect key="frame" x="20" y="220" width="335" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="V8a-8A-Tne"/>
@@ -51,7 +51,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Let's get started by seeing how the app works!" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-DW-cet">
-                                <rect key="frame" x="20" y="555" width="374" height="100"/>
+                                <rect key="frame" x="20" y="555" width="335" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="A3v-dY-cGb"/>
@@ -62,7 +62,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It allows you to secretly contact family, friends, or the authorities anytime you feel your safety might be at risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pO-XT-L3E">
-                                <rect key="frame" x="20" y="355" width="374" height="150"/>
+                                <rect key="frame" x="20" y="355" width="335" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="iwC-xr-EXA"/>
@@ -72,7 +72,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2h-Kj-5rs">
-                                <rect key="frame" x="172" y="663" width="70" height="78"/>
+                                <rect key="frame" x="152.66666666666666" y="663" width="70" height="77.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,11 +113,11 @@
             <objects>
                 <viewController storyboardIdentifier="Onboard2" id="uaM-DC-GPg" customClass="SecondOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="McU-iz-yjS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This segmented control tells the app what level of danger you're in" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-ma-XKi">
-                                <rect key="frame" x="20" y="44" width="374" height="100"/>
+                                <rect key="frame" x="20" y="44" width="335" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="How-Xu-aVd"/>
@@ -127,13 +127,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SegmentControl@2x" translatesAutoresizingMaskIntoConstraints="NO" id="SkO-Kp-3Rh">
-                                <rect key="frame" x="20" y="152" width="374" height="36"/>
+                                <rect key="frame" x="20" y="152" width="335" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="8vh-V7-aIZ"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Easy - Sends a text to your chosen contact(s) that you might be in a dangerous situation and asks them to check in with you" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-rq-jgq">
-                                <rect key="frame" x="20" y="212" width="374" height="110"/>
+                                <rect key="frame" x="20" y="212" width="335" height="110"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="Hor-KO-m9E"/>
@@ -143,7 +143,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-SG-z9u">
-                                <rect key="frame" x="20" y="372" width="374" height="130"/>
+                                <rect key="frame" x="20" y="330" width="335" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="5sV-91-erA"/>
@@ -154,10 +154,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-2L-qhV">
-                                <rect key="frame" x="20" y="552" width="374" height="135"/>
+                                <rect key="frame" x="20" y="468" width="335" height="155"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="cT3-sG-cUx"/>
+                                    <constraint firstAttribute="height" constant="155" id="cT3-sG-cUx"/>
                                 </constraints>
                                 <string key="text">Hard - Sends your current location and a text asking your chosen contact(s) to immediately contact law enforcement informing them of your location and that you are in immediate danger</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -165,7 +165,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-S4-exw">
-                                <rect key="frame" x="20" y="762" width="374" height="80"/>
+                                <rect key="frame" x="20" y="678" width="335" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="ZDX-rN-1H8"/>
@@ -181,7 +181,7 @@
                             <constraint firstItem="xoz-rq-jgq" firstAttribute="top" secondItem="SkO-Kp-3Rh" secondAttribute="bottom" constant="24" id="6pr-MT-GtR"/>
                             <constraint firstItem="ZIW-ma-XKi" firstAttribute="top" secondItem="prG-IA-56M" secondAttribute="top" id="9lQ-Jp-UBJ"/>
                             <constraint firstItem="ZIW-ma-XKi" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="EyW-jY-Mhf"/>
-                            <constraint firstItem="GpZ-SG-z9u" firstAttribute="top" secondItem="xoz-rq-jgq" secondAttribute="bottom" constant="50" id="FqF-cH-lqr"/>
+                            <constraint firstItem="GpZ-SG-z9u" firstAttribute="top" secondItem="xoz-rq-jgq" secondAttribute="bottom" constant="8" id="FqF-cH-lqr"/>
                             <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="ZIW-ma-XKi" secondAttribute="trailing" constant="20" id="KkQ-kS-coy"/>
                             <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="xoz-rq-jgq" secondAttribute="trailing" constant="20" id="Kys-3u-4qo"/>
                             <constraint firstItem="prG-IA-56M" firstAttribute="bottom" secondItem="jsQ-S4-exw" secondAttribute="bottom" constant="20" id="NAt-z3-zjj"/>
@@ -192,7 +192,7 @@
                             <constraint firstItem="xoz-rq-jgq" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="aaf-Ji-Ekx"/>
                             <constraint firstItem="SkO-Kp-3Rh" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="hOu-HF-wh1"/>
                             <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="GpZ-SG-z9u" secondAttribute="trailing" constant="20" id="hsx-YR-dBC"/>
-                            <constraint firstItem="7Fs-2L-qhV" firstAttribute="top" secondItem="GpZ-SG-z9u" secondAttribute="bottom" constant="50" id="kEv-St-X4l"/>
+                            <constraint firstItem="7Fs-2L-qhV" firstAttribute="top" secondItem="GpZ-SG-z9u" secondAttribute="bottom" constant="8" id="kEv-St-X4l"/>
                             <constraint firstItem="jsQ-S4-exw" firstAttribute="leading" secondItem="prG-IA-56M" secondAttribute="leading" constant="20" id="lmB-0L-9ix"/>
                             <constraint firstItem="prG-IA-56M" firstAttribute="trailing" secondItem="jsQ-S4-exw" secondAttribute="trailing" constant="20" id="tDD-kd-fHq"/>
                             <constraint firstItem="SkO-Kp-3Rh" firstAttribute="top" secondItem="ZIW-ma-XKi" secondAttribute="bottom" constant="8" id="xEC-bH-yAc"/>
@@ -217,67 +217,68 @@
             <objects>
                 <viewController storyboardIdentifier="Onboard3" id="SA2-AM-jfs" customClass="ThirdOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7r-ow-dIb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The &quot;START&quot; button starts recording audio of the situation" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AjX-HQ-z7B">
-                                <rect key="frame" x="20" y="44" width="374" height="70"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The &quot;START&quot; button starts recording audio of the situation" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AjX-HQ-z7B">
+                                <rect key="frame" x="20" y="44" width="335" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="UwK-qf-fvM"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartButton@3x" translatesAutoresizingMaskIntoConstraints="NO" id="Ixg-Yp-3hD">
-                                <rect key="frame" x="87" y="122" width="240" height="240"/>
+                                <rect key="frame" x="67.666666666666686" y="122" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ixg-Yp-3hD" secondAttribute="height" multiplier="1:1" id="0kK-B0-Dc0"/>
                                     <constraint firstAttribute="width" constant="240" id="Ggc-GI-ZSd"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-qX-amx">
-                                <rect key="frame" x="20" y="370" width="374" height="160"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-qX-amx">
+                                <rect key="frame" x="20" y="370" width="335" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="W57-n9-spy"/>
+                                    <constraint firstAttribute="height" constant="100" id="W57-n9-spy"/>
                                 </constraints>
                                 <string key="text">Once you press start, the app will record the situation for 30 minutes, then it will send the text and audio recording to your specified contact(s)</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(You can change the length of the record-to-send time in settings under &quot;Game Length&quot;)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5rU-i4-Oej">
-                                <rect key="frame" x="20" y="550" width="374" height="60"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(You can change the length of the record-to-send time in settings under &quot;Game Length&quot;)" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rU-i4-Oej">
+                                <rect key="frame" x="20" y="478" width="335" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="C3j-Ef-vah"/>
+                                    <constraint firstAttribute="height" constant="80" id="C3j-Ef-vah"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5sD-in-4za">
-                                <rect key="frame" x="20" y="632" width="374" height="210"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sD-in-4za">
+                                <rect key="frame" x="20" y="568" width="335" height="190"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="8jF-8O-5rJ"/>
+                                    <constraint firstAttribute="height" constant="190" id="8jF-8O-5rJ"/>
                                 </constraints>
                                 <string key="text">You will receive two notifications during recording, one half way through, and one five minutes before time is up asking if "you're still there" before it sends the messages. If you didn't mean to tap start, simply tap start a second time and it will cancel the process</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="5sD-in-4za" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5rU-i4-Oej" secondAttribute="bottom" constant="10" id="4BU-zC-ved"/>
                             <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="5sD-in-4za" secondAttribute="trailing" constant="20" id="DRB-OB-kKP"/>
                             <constraint firstItem="AjX-HQ-z7B" firstAttribute="top" secondItem="Mya-Jb-jVn" secondAttribute="top" id="MxP-lc-pyl"/>
                             <constraint firstItem="Mya-Jb-jVn" firstAttribute="bottom" secondItem="5sD-in-4za" secondAttribute="bottom" constant="20" id="VCM-3x-VYh"/>
                             <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="5rU-i4-Oej" secondAttribute="trailing" constant="20" id="XZH-Xj-mGD"/>
                             <constraint firstItem="5rU-i4-Oej" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="YwV-et-arR"/>
-                            <constraint firstItem="5rU-i4-Oej" firstAttribute="top" secondItem="2uR-qX-amx" secondAttribute="bottom" constant="20" id="cQ6-z1-4cW"/>
+                            <constraint firstItem="5rU-i4-Oej" firstAttribute="top" secondItem="2uR-qX-amx" secondAttribute="bottom" constant="8" id="cQ6-z1-4cW"/>
                             <constraint firstItem="5sD-in-4za" firstAttribute="leading" secondItem="Mya-Jb-jVn" secondAttribute="leading" constant="20" id="dHA-zU-ndx"/>
                             <constraint firstItem="Mya-Jb-jVn" firstAttribute="trailing" secondItem="2uR-qX-amx" secondAttribute="trailing" constant="20" id="gYw-xd-7os"/>
                             <constraint firstItem="Ixg-Yp-3hD" firstAttribute="centerX" secondItem="Q7r-ow-dIb" secondAttribute="centerX" id="nLn-yl-O6x"/>
@@ -306,17 +307,17 @@
             <objects>
                 <viewController storyboardIdentifier="Onboard4" id="Ndl-X1-7Wi" customClass="FourthOnboardViewController" customModule="The_Game_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPL-2K-sb3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to get set up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbp-Ug-SQa">
-                                <rect key="frame" x="39.5" y="129" width="335" height="47"/>
+                                <rect key="frame" x="20" y="129" width="335" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrA-f5-s0T">
-                                <rect key="frame" x="20" y="692" width="374" height="50"/>
+                                <rect key="frame" x="20" y="608" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LaG-vS-6P6"/>
@@ -331,7 +332,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjU-po-OkS">
-                                <rect key="frame" x="87" y="316" width="240" height="264"/>
+                                <rect key="frame" x="67.666666666666686" y="274" width="240" height="264"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="221"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
